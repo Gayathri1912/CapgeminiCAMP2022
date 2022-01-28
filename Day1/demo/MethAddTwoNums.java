@@ -1,7 +1,12 @@
-//Java Program to Add Two Integers
+//Java Program to Add Two Integers using classes and methods
 package com.demo;
 import java.util.*;
-public class AddTwoNums {
+class Operation {
+	void add(int a,int b) {
+		System.out.println("The sum of given two number is "+(a+b));
+	}
+}
+public class MethAddTwoNums {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,8 +14,10 @@ public class AddTwoNums {
 		System.out.println("Enter two numbers to add:");
 		int a= sc.nextInt();
 		int b = sc.nextInt();
-		System.out.println("The sum of given two number is "+(a+b));
+		Operation c = new Operation();
+		c.add(a,b);
 
 	}
 
 }
+
